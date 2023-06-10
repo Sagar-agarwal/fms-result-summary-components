@@ -1,0 +1,164 @@
+.result-component {
+	// align-self: center;
+	// border: 1px solid black;
+	display: flex;
+	border-radius: 2rem;
+	box-shadow: 0px 4px 10px rgba($color-black, 0.2);
+	width: 40rem;
+	aspect-ratio: 16/9;
+}
+
+.result {
+	display: flex;
+	align-items: center;
+	flex-flow: column wrap;
+	padding: 2rem 2rem;
+	background: $gradient-purple;
+	border-radius: 2rem;
+	color: $color-grey;
+
+	&__heading {
+		margin-bottom: 1.5rem;
+		font-size: 1.2rem;
+	}
+
+	&__feedback {
+		margin-bottom: 1.5rem;
+		color: $color-white;
+		font-size: 1.5rem;
+		font-weight: 800;
+	}
+	&__feedback-detailed {
+		display: flex;
+		align-self: center;
+		// width: 50%;
+
+		&--text {
+			display: flex;
+			text-align: center;
+			max-width: 12rem;
+		}
+	}
+
+	.score {
+		height: 8rem;
+		width: 8rem;
+		border-radius: 100%;
+		margin-bottom: 1.5rem;
+		background: $gradient-blue-grey;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&__final {
+			color: $color-white;
+			font-size: 3rem;
+			font-weight: 800;
+		}
+		&__max {
+			font-weight: 800;
+		}
+	}
+}
+
+.summary {
+	display: flex;
+	flex-grow: 3;
+	flex-direction: column;
+	padding: 2rem 2rem;
+	font-size: 1.2rem;
+	justify-content: space-between;
+
+	&__heading {
+		font-size: 1.2rem;
+		margin-bottom: 0.5rem;
+	}
+
+	&__details {
+		display: flex;
+
+		flex-direction: column;
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+
+	&__detail {
+		&-red,
+		&-green,
+		&-blue,
+		&-yellow {
+			display: flex;
+			justify-content: space-between;
+			background-color: grey;
+			margin: 0.25rem 0;
+			padding: 0.5rem 1rem;
+			border-radius: 5px;
+		}
+
+		&-red {
+			@include detail-row($color-primary-red);
+		}
+		&-yellow {
+			@include detail-row($color-primary-yellow);
+		}
+		&-green {
+			@include detail-row($color-primary-teal);
+		}
+		&-blue {
+			@include detail-row($color-primary-blue);
+		}
+
+		&-topic {
+			&--icon {
+				padding: 0 5px;
+			}
+			&--text {
+				// font-weight: bold;
+			}
+		}
+		&-marks {
+			display: flex;
+			&--final {
+				font-weight: bold;
+			}
+			&--max {
+				display: flex;
+				color: $color-grey;
+				& span {
+					padding: 0 5px;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	&__action {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+[class^='btn-'] {
+	display: inline-block;
+	width: 100%;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10rem;
+	font-weight: 800;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	transition: all 0.2s ease;
+	backface-visibility: hidden;
+	cursor: pointer;
+}
+
+.btn-continue {
+	background: $color-blue-dark;
+	color: $color-white;
+
+	&:hover {
+		background: $gradient-purple;
+	}
+}

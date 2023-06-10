@@ -1,0 +1,8 @@
+@mixin detail-row($color) {
+	background-color: rgba($color, 0.1);
+	& > div:first-child {
+		color: $color;
+	}
+
+	@content;
+}

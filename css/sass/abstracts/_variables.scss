@@ -1,0 +1,30 @@
+// COLORS
+
+$color-primary-red: hsl(0, 100%, 67%);
+$color-primary-yellow: hsl(39, 100%, 56%);
+$color-primary-teal: hsl(166, 100%, 37%);
+$color-primary-blue: hsl(234, 85%, 45%);
+
+$color-black: hsl(0, 0%, 0%);
+$color-grey: hsl(240, 2%, 70%);
+$color-white: hsl(0, 0%, 100%);
+$color-pale-blue: hsl(221, 100%, 96%);
+$color-lavender-light: hsl(241, 100%, 89%);
+$color-blue-dark: hsl(224, 30%, 27%);
+$color-blue-purple: hsl(228, 45%, 44%);
+// Gradient Colors
+$color-blue-slate: hsl(252, 100%, 67%);
+$color-blue-royal: hsl(241, 81%, 54%);
+
+$color-blue-violet: hsla(256, 72%, 46%, 1);
+$color-blue-persian: hsla(241, 72%, 46%, 0);
+
+$gradient-purple: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+$gradient-blue-grey: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+// Responsive - Screen Widths
+/*
+(min-width: $screen-desktop) screen width greater then the $screen-desktop
+*/
+$screen-desktop: 1440px;
+$screen-mobile: 375px;

@@ -1,0 +1,10 @@
+.header {
+	&__heading {
+		font-size: 4rem;
+		color: transparent;
+		background: $gradient-purple;
+		background-clip: text;
+		-webkit-background-clip: text;
+		text-shadow: 4px 4px 6px rgba($color-black, 0.2);
+	}
+}
