@@ -1,11 +1,10 @@
 .result-component {
-	// align-self: center;
-	// border: 1px solid black;
 	display: flex;
 	border-radius: 2rem;
 	box-shadow: 0px 4px 10px rgba($color-black, 0.2);
 	width: 40rem;
 	aspect-ratio: 16/9;
+	margin-bottom: 2rem;
 }
 
 .result {
@@ -160,5 +159,41 @@
 
 	&:hover {
 		background: $gradient-purple;
+	}
+}
+
+@media screen and (max-width: $screen-desktop) {
+	.result-component {
+		flex-direction: column;
+		width: 40%;
+	}
+
+	.result {
+		&__feedback-detailed--text {
+			font-size: 1.2rem;
+			max-width: 100%;
+		}
+	}
+
+	.summary {
+		&__details {
+			margin-bottom: 1rem;
+		}
+
+		&__detail {
+			&-red,
+			&-green,
+			&-blue,
+			&-yellow {
+				margin: 0.5rem 0;
+				padding: 1rem 1rem;
+				border-radius: 5px;
+			}
+		}
+
+		// Buttons
+		[class^='btn-'] {
+			padding: 1rem 1rem;
+		}
 	}
 }

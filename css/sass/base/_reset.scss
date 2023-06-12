@@ -10,10 +10,10 @@
 
 body {
 	font-size: 62.5%;
-	height: 100vh;
+	min-height: 100vh;
 	font-family: 'Hanken Grotesk', sans-serif;
 	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
